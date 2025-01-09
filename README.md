@@ -2,7 +2,7 @@
 react.js app to convert currencies using api
 
 ### current things to impliment
-* need to add results ui section
+* need to add results ui section - done
 * add dummy data for currencies
 * add logic to take data and populate currency select menus
 * add logic for converting from one currency to another
