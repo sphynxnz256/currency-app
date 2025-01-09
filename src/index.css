@@ -20,7 +20,17 @@
   margin: 24px;
 }
 
-.converterContainer {
+.titleContainer h1 {
+  font-size: 1.7rem;
+}
+
+.outerConverterContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.converterContainer,
+  .resultsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,8 +42,7 @@
 .converterFromContainer, 
   .converterToContainer {
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
   margin-bottom: 14px;
 }
 
@@ -51,10 +60,8 @@
   margin-bottom: 14px;
 }
 
-
-
 .converterContainer label {
-  font-size: 20px;
+  font-size: 1.0rem;
   margin-bottom: 14px;
 }
 
@@ -62,14 +69,14 @@
   border-radius: 5px;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 0.9rem;
   padding: 6px;
   margin-bottom: 14px;
   width: 162px;
 }
 
 .converterContainer input {
-  font-size: 20px;
+  font-size: 1rem;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -78,10 +85,34 @@
   width: 150px;
 }
 
+
+.resultsContainer {
+  margin-top: 24px;
+}
+
 @media (min-width: 768px) {
+  .titleContainer h1 {
+    font-size: 2rem;
+  }
+
   .converterContainer{
     flex-direction: row;
     justify-content: space-between;
+  }
+  .converterContainer label {
+    font-size: 1.2rem;
+  }
+
+  .converterContainer select {
+    font-size: 1rem;
+  }
+
+  .converterContainer input {
+    font-size: 1.1rem;
+  }
+
+  .resultsContainer p {
+    font-size: 1.2rem;
   }
 
   .converterFromContainer {
