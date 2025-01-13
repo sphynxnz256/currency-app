@@ -62,21 +62,21 @@
   border: none;
   outline: none;
   font-size: 0.9rem;
-  text-align: center;
+  text-align: left;
   padding: 6px;
   margin-bottom: 14px;
-  width: 162px;
+  width: 292px;
 }
 
 .converterContainer input {
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
   border: none;
   outline: none;
   margin-bottom: 14px;
   padding: 6px;
-  width: 150px;
+  width: 280px;
 }
 
 .resultsContainer button {
@@ -85,7 +85,7 @@
   border-radius: 5px;
   border: none;
   outline: none;
-  width: 162px;
+  width: 292px;
   background-color: hsl(0, 0%, 60%);
   cursor: pointer;
 }
@@ -98,7 +98,29 @@
   margin-top: 24px;
 }
 
-@media (min-width: 768px) {
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.loadingState i {
+  opacity: 0.2;
+  font-size: 5rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 1024px) {
   .titleContainer h1 {
     font-size: 2rem;
   }
